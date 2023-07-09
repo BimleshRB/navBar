@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+
+}
+
+.mainheader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.header {
+    width: fit-content;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    
+}
+
+
+.nav,
+ul {
+    display: flex;
+    padding: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    align-items: center;
+    /* height: 100%; */
+
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 6px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav ul li ion-icon {
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+li span {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav ul li:hover ion-icon,.language:hover ion-icon {
+    transform: rotate(180deg);
+    transition: .1s ease-in-out;
+}
+
+.nav ul li:hover,
+.nav .search:hover,
+.tryForFree:hover,
+.language:hover {
+    background-color: rgb(25, 30, 37);
+}
+
+.drop ul {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    background-color: rgb(25, 30, 37);
+    padding-inline-start: 0px;
+    position: absolute;
+    left: 0px;
+    right: 0;
+    font-size: 15px;
+    align-items: center;
+    transition: 0.4s ease-in-out;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav ul li:hover .ul {
+    display: block;
+
+}
+
+
+.tryForFree{
+    padding: 10px;
+    cursor: pointer;
+}
+.tryForFree a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 16px;
+
+}
+
+.search {
+    font-size: 25px;
+    padding: 12px;
+    /* padding-right: 30px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.user {
+    padding-top: 8px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.Categories {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+
+}
+.Categories span{
+ height: 38px;
+    
+}
+
+.uls {
+    position: absolute;
+    display: flex;
+    width: 750px;
+    top: 50px;
+    left: -400px;
+    background-color: rgb(25, 30, 37);
+    display: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-inline-start: 0px;
+    /* text-align: left; */
+
+}
+
+.nav ul li:hover .uls {
+    display: flex;
+}
+
+.uls ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.uls ul li {
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.uls ul li:hover{
+    background-color: aliceblue;
+    color: rgb(25, 30, 37);
+    border-radius: 10px;
+    
+}
+
+.side h4 {
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.side .sideuls {
+    display: flex;
+}
+/* .language */
+
+.language ion-icon {
+    /* padding: 5px; */
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.language{
+    position: relative;
+}
+.language div:nth-child(1) {
+    padding: 10px;
+    padding-left: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  
+    /* height: 50px; */
+}
+
+.uls2{
+    position: absolute;
+    display: flex;
+    background-color: rgb(25, 30, 37);
+    top: 45px;
+    left: -500px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+
+}
+.language:hover .uls2{
+display: flex;
+
+}
+.uls2 ul{
+    display: flex;
+    flex-direction: column;
+}
+.uls2 ul li{
+    width: 100%;
+    padding: 10px;
+    margin: 3px;
+}
+.uls2 ul li:hover{
+    background-color: aliceblue;
+    color:rgb(25, 30, 37) ;
+    border-radius: 10px;
+    
+}
+.uls2{
+    display: none;
+}
